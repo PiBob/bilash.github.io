@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        body{
+            background-color: rgb(250, 250, 250);
+        }
+        p, h1, th{
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .first-text{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            margin-bottom: 2em;
+        }
+        th{
+            width: 70px;
+            height: 70px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .question{
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .color-text{
+            color: rgb(126, 128, 255);
+        }
+        .sea-of-cards-1, .sea-of-cards-2, .sea-of-cards-3, .sea-of-cards-4, .sea-of-cards-5, .sea-of-cards-6, .sea-of-cards-7, .sea-of-cards-8, .sea-of-cards-9{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="first-text">Введіть свою <div class="color-text">дату народження</div>в поле.<br> Після виконання дії, щоб спробувати ще раз, <div class="color-text">перезавантажте сторінку</div></h1>
+    <div class="question">
+        <input type="date" id="my_input">
+    </div>
+    <table id="my_table">
+        <tbody id="my_table_body">
+            <tr>
+                <th id="td-3"></th>
+                <th id="td-6"></th>
+                <th id="td-9"></th>
+            </tr>
+            <tr>
+                <th id="td-2"></th>
+                <th id="td-5"></th>
+                <th id="td-8"></th>
+            </tr>
+            <tr>
+                <th id="td-1"></th>
+                <th id="td-4"></th>
+                <th id="td-7"></th>
+            </tr>
+        </tbody>
+    </table>
+    <div class="sea-of-cards-1">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">1</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна одиниця:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">11</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві одиниці:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">111</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три одиниці:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">1111</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири одиниці:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-2">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна двійка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">22</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві двійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">222</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три двійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">2222</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири двійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">3</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна трійка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">33</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві трійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">333</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три трійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">3333</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири трійки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">4</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна четвірка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">44</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві четвірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">444</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три четвірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">4444</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири четвірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-5">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">5</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна п'ятірка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">55</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві п'ятірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">555</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три п'ятірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">5555</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири п'ятірки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">6</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна шістка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">66</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві шістки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">666</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три шістки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">6666</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири шістки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-7">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">7</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна сімка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">77</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві сімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">777</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три сімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">7777</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири сімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-8">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">8</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна вісімка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">88</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві вісімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">888</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три вісімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">8888</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири вісімки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <div class="sea-of-cards-9">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">9</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас одна дев'ятка:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">99</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас дві дев'ятки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">999</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас три дев'ятки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">9999</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Якщо у вас чотири дев'ятки:</h6>
+                <p class="card-text">Ви: ... </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("my_input").addEventListener("change", function() {
+        let input = this.value;
+        let dateEntered = new Date(input);
+        let day = dateEntered.getDate()
+        let month = dateEntered.getMonth() + 1
+        let year = dateEntered.getFullYear()
+        let all = String(day) + String(month) + String(year)  // all is String
+        all = all.split('').map(x => Number(x))  // all is array with numbers
+        for(let i=1; i<=9; i++) {
+            let elem = document.querySelector(`#td-${i}`)
+            for(let index in all) {
+                if(all[index] === i)
+                    elem.innerText += i
+            }
+        }
+    });
+    </script>
+</body>
+</html>
